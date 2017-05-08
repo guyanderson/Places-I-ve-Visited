@@ -29,6 +29,11 @@ $(document).ready(function() {
       $(".place-landmarks").text(newPlace.placeLandmark);
       $(".place-date-visited").text(newPlace.placeDateVisited);
     });
+    // Clears the data held in the listed values
+    $("input#new-name").val("");
+    $("input#new-location").val("");
+    $("input#new-landmark").val("");
+    $("input#new-date").val("");
 
   });
 });
