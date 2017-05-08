@@ -5,41 +5,44 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address book</title>
+    <title>Places Visited</title>
   </head>
   <body>
     <div class="container">
-      <h1>Address book</h1>
+      <h1>Places Visited</h1>
 
       <div class="row">
         <div class="col-md-6">
           <h2>Add a contact:</h2>
-          <form id="new-destination">
+          <form id="new-place">
+            <!-- NAME -->
             <div class="form-group">
               <label for="new-name">Name</label>
               <input type="text" class="form-control" id="new-name">
             </div>
-
+            <!-- LOCATION -->
             <div class="form-group">
               <label for="new-location">Located in</label>
               <input type="text" class="form-control" id="new-location">
             </div>
-
+            <!-- LOCTION -->
             <div class="form-group">
               <label for="new-landmark">Landmarks</label>
               <input type="text" class="form-control" id="new-landmark">
             </div>
-
+            <!-- DATE VISITED -->
             <div class="form-group">
               <label for="new-date">Date visited</label>
-              <input type="text" class="form-control" id="date">
+              <input type="text" class="form-control" id="new-date">
             </div>
 
-            <div class="form-group">
+            <!-- COME BACK TO THIS -->
+            <!-- COMPANIONS -->
+            <!-- <div class="form-group">
               <label for="new-companions">who did you go with?</label>
               <input type="text" class="form-control" id="companions">
             </div>
-            <!-- COME BACK TO THIS -->
+
             <div class="form-group">
               <label class="custom-control custom-radio">
                 <input id="radio1" name="radio" type="radio" class="custom-control-input">
@@ -51,23 +54,24 @@
                 <span class="custom-control-indicator"></span>
                 <span class="custom-control-description">I would not recommend this destination</span>
               </label>
-            </div>
+            </div> -->
 
             <button type="submit" class="btn">Add</button>
           </form>
 
-          <h2>Contacts:</h2>
-          <ul id="contacts">
+          <h2>Place:</h2>
+          <ul id="place">
 
           </ul>
         </div>
         <div class="col-md-6">
-          <div id="show-contact">
+          <div id="show-place">
             <h2></h2>
 
-            <p>First name: <span class="first-name"></span></p>
-            <p>Last name: <span class="last-name"></span></p>
-            <p>Address: <span class="address"></span></p>
+            <p>Place Name: <span class="place-name"></span></p>
+            <p>Place Location: <span class="place-location"></span></p>
+            <p>Landmarks: <span class="place-landmarks"></span></p>
+            <p>Date Visited: <span class="place-date-visited"></span></p>
           </div>
       </div>
       </div>
